@@ -1,0 +1,23 @@
+{
+  "name": "bot-leaderboard-elok",
+  "version": "1.0.0",
+  "description": "auto pushrank gg geming",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "scantarbian",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-schedule": "^2.0.0",
+    "puppeteer": "^9.1.1",
+    "puppeteer-extra": "^3.1.18",
+    "puppeteer-extra-plugin-adblocker": "^2.11.11",
+    "user-agents": "^1.0.664"
+  }
+}
