@@ -3,12 +3,13 @@ const puppeteer = require('puppeteer-extra');
 const UserAgent = require('user-agents');
 const schedule = require('node-schedule');
 
-// adblocker
-puppeteer.use(require('puppeteer-extra-plugin-adblocker')({
-    blockTrackers: true
+// block pdf 
+puppeteer.use(require('puppeteer-extra-plugin-block-resources')({
+    blockedTypes: new Set(['xhr', 'image'])
 }))
 
-// run new instance every 10 secs = ez push rank
+// run new instance every 10 secs = ez push rank 
+// (emerald in 3 hours - assuming non stop run)
 schedule.scheduleJob("*/10 * * * * *" , async() => { 
     // will fire every hour (0 * * * *)
     // will fire every minute (*/1 * * * *)
@@ -61,6 +62,7 @@ schedule.scheduleJob("*/10 * * * * *" , async() => {
             await el.click({button: "middle"}); // open in new tab
 
             // https://github.com/puppeteer/puppeteer/issues/3718
+            // https://stackoverflow.com/a/62612102/13220209
             const getNewPageWhenLoaded =  async () => {
                 return new Promise(x =>
                     browser.on('targetcreated', async target => {

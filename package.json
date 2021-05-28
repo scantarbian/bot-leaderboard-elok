@@ -17,7 +17,7 @@
     "node-schedule": "^2.0.0",
     "puppeteer": "^9.1.1",
     "puppeteer-extra": "^3.1.18",
-    "puppeteer-extra-plugin-adblocker": "^2.11.11",
+    "puppeteer-extra-plugin-block-resources": "^2.2.9",
     "user-agents": "^1.0.664"
   }
 }
