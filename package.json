@@ -1,6 +1,6 @@
 {
   "name": "bot-leaderboard-elok",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "auto pushrank gg geming",
   "main": "index.js",
   "scripts": {

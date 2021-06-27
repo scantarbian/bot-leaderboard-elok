@@ -26,7 +26,6 @@ schedule.scheduleJob("*/10 * * * * *" , async() => {
         await page.setUserAgent(userAgent);
         await page.setDefaultNavigationTimeout(0);
     
-        // FMIPA-MII1211-PRG2 w/ Mr. Wahyono
         await page.goto(process.env.COURSE_URL, { waitUntil: 'networkidle2' });
     
         await page.evaluate(() => { // login with SSO
@@ -57,8 +56,8 @@ schedule.scheduleJob("*/10 * * * * *" , async() => {
         console.log(`${expData.current} XP total | ${expData.remaining} XP needed until next level`)
     
         // open all the materials
-        const material = await page.$x("//span[contains(., 'Presentation Material')]")
-        for (const el of material){
+        const target = await page.$x("//span[contains(., 'Presentation Material')]")
+        for (const el of target){
             await el.click({button: "middle"}); // open in new tab
 
             // https://github.com/puppeteer/puppeteer/issues/3718
