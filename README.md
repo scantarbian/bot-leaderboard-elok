@@ -1,4 +1,4 @@
-# Bot Leaderboard eLok
+# Bot Leaderboard [eLok](https://elok.ugm.ac.id)
 
 ## ⚠ Disclaimer ⚠
 
