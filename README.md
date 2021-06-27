@@ -11,7 +11,7 @@ _Saya, pembuat ([@scantarbian](https://github.com/scantarbian)), dengan ini meny
 Aplikasi ini membutuhkan [Node](https://nodejs.org/en/) versi 10 atau lebih.
 
 ```sh
-npm i
+npm install
 ```
 
 Ini akan mengunduh dan memasang file-file yang diperlukan untuk menjalankan aplikasi, terutama [Puppeteer](https://pptr.dev/).
