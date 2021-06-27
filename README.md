@@ -8,7 +8,7 @@ _Saya, pembuat ([@scantarbian](https://github.com/scantarbian)), dengan ini meny
 
 #### 1. Install Dependency
 
-Aplikasi ini membutuhkan [Node](https://nodejs.org/en/) versi 10 atau lebih.
+Aplikasi ini membutuhkan [Node](https://nodejs.org/en/) versi terbaru.
 
 ```sh
 npm install
