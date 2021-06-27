@@ -61,6 +61,10 @@ atau
 node index.js
 ```
 
+#### 6. Hentikan Aplikasi
+
+Belum ada sistem parameter yang akan menghentikan aplikasi secara otomatis apabila sudah mencapai jumlah exp tertentu, sehingga untuk menghentikan aplikasi masih dengan cara manual yaitu `Control+X` apabila exp dirasa sudah mencukupi.
+
 ### Penutup
 
 Apabila mengalami kendala silahkan buat [issue baru](https://github.com/scantarbian/bot-leaderboard-elok/issues/new) atau fork dan pull request apabila ingin berkolaborasi dalam pengembangan bot ini.
